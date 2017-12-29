@@ -17,7 +17,7 @@ namespace hellobook
                 .UseKestrel()
                 .UseStartup<Startup>()
                 .UseConfiguration(config)
-                .UseUrls("http://localhost:5000")
+                .UseUrls("http://localhost:8881")
                 .Build();
 
             host.Run();
