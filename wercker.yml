@@ -1,7 +1,7 @@
 box: microsoft/dotnet:2.0.0-sdk
 no-response-timeout: 10
 build:
-  steps:
+  steps:    
     - script:
         name: restore
         code: |
@@ -13,11 +13,11 @@ build:
     - script:
         name: publish
         code: |
-          dotnet publish -o publish
-    - script: 
+          dotnet publish -o publish	 
+    - script:
         name: copy binary
         code: |
-          cp -r . $WERCKER_OUTPUT_DIR/app
+          cp -r . $WERCKER_OUTPUT_DIR/app 
           cd $WERCKER_OUTPUT_DIR/app
 deploy:
   steps:
@@ -27,3 +27,4 @@ deploy:
         tag: 1.0
         repository: rafalpienkowski/hellobook
         registry: https://registry.hub.docker.com
+        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
