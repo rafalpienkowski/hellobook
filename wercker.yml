@@ -27,4 +27,4 @@ deploy:
         username: $USERNAME
         password: $PASSWORD
         registry: https://registry.hub.docker.com/v2
-        entrypoint: "dotnet hello-world.dll --server.urls=http://0.0.0.0:8080"
+        entrypoint: "dotnet hellobook.dll --server.urls=http://0.0.0.0:8080"
