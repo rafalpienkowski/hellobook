@@ -26,5 +26,5 @@ deploy:
         password: $PASSWORD
         tag: 1.0
         repository: rafalpienkowski/hellobook
-        registry: https://registry.hub.docker.com
+        registry: https://registry.hub.docker.com/v2
         entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
