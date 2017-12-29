@@ -14,7 +14,7 @@ namespace hellobook
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.Run(async (context) => {
-                await context.Response.WriteAsync("Hello Word!");
+                await context.Response.WriteAsync("Hello Word from container!");
             });
         }
     }
