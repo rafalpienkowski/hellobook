@@ -32,4 +32,3 @@ deploy:
         password: $PASSWORD
         registry: https://registry.hub.docker.com/v2
         entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
-        ports: "5000, 8080"
