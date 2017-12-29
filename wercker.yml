@@ -22,8 +22,8 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-      username: $USERNAME
-      password: $PASSWORD
-      repository: rafalpienkowski/hellobook
-      registry: https://registry.hub.docker.com
-      entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
+        username: $USERNAME
+        password: $PASSWORD
+        tag: 1.0
+        repository: rafalpienkowski/hellobook
+        registry: https://registry.hub.docker.com
